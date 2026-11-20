@@ -1,10 +1,14 @@
-# 随步 RunMusic
+# StrideTune（随步）
 
 给跑步时手动对齐节奏用的 Android 音乐播放器。原生 Java 界面和 Media3 音频引擎，无账号、无广告、无自建服务器。支持 Android 8.0 及以上。
 
+**[下载 Android 试用版 APK](https://github.com/GPDdev/StrideTune/releases/download/v0.1.0/StrideTune-0.1.0.apk)** | [版本说明与校验文件](https://github.com/GPDdev/StrideTune/releases/tag/v0.1.0)
+
+<img src="docs/interface.png" alt="StrideTune 随步播放器实际界面，支持单指滑动调速" width="320">
+
 ## 使用
 
-1. 安装 `outputs/RunMusic-0.1.0.apk`，从「曲库」添加音频或网易云歌单。
+1. 从上方链接下载并安装 APK，从「曲库」添加音频或网易云歌单。自行构建的安装包位于 `outputs/RunMusic-0.1.0.apk`。
 2. 选择歌曲并播放。在中间的大块区域向右滑动加速，向左滑动减速；抬手保留当前倍速，下一次从当前值继续调节。
 3. 默认 0.75–1.50 倍，滑满区域变化 0.50 倍，变速不变调。双击调速区恢复 1.00 倍；如果设置范围不包含 1.00，则回到最近的边界。
 4. 右上角可设置横向 / 纵向手势、反转方向、按住后滑动、灵敏度、倍速范围、双击复位、音调保持、震动和亮屏。允许设置的范围为 0.25–3.00 倍。
@@ -50,4 +54,4 @@ python scripts/bootstrap.py
 - App 内成功导入公开网易云歌单 `3778678` 的 199 首曲目，并实际播放其中一首公开音频。
 - 未进行实体手机、蓝牙耳机、长时间续航、户外跑步及听感质量验证，也未开发 iOS 版本。
 
-实际截图在 `outputs/interface.png`，验证摘要在 `outputs/verification.json`。
+实际截图在 `docs/interface.png`，验证摘要与 SHA-256 校验文件随 GitHub Release 发布。本地构建输出与工具缓存不上传到仓库。
